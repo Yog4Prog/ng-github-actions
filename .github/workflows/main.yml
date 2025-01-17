@@ -30,7 +30,7 @@ jobs:
       run: npm test -- --configuration=ci
     - name: E2E
       run: | 
-        npm install -g webdriver-manager
+        npm install webdriver-manager
         webdriver-manager update
         npm run e2e -- --configuration=ci
 
